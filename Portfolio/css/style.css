@@ -6,6 +6,9 @@
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
+.slides-navigation {
+	z-index: 6;
+}
 
 .slides-navigation .prev,
 .slides-navigation .next {
@@ -47,4 +50,12 @@
 
 .titleMessage .heading .sub {
 	font-size: 23px;
+}
+
+.section {
+	padding: 100px 0;
+}
+
+.aboutImage {
+	max-width: 100%;
 }
