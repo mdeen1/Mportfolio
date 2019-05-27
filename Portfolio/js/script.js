@@ -34,7 +34,14 @@ $(document).ready(function() {
 	});
 
 
-	$('.chart').easyPieChart({
+	
+
+	var skillsTopOffset = $(".skillsSection").offset().top;
+
+	$(window).scroll(function() {
+		if(window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
+
+			$('.chart').easyPieChart({
             easing: 'easeInOut',
             barColor: '#fff',
             trackColor: false, //color of the percent
@@ -45,5 +52,8 @@ $(document).ready(function() {
             	$(this.el).find('.percent').text(Math.round(percent));
             }
         });
+
+		}
+	});
 
 });
