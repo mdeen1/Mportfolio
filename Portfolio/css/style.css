@@ -1,3 +1,6 @@
+/*------------------------------------------------------------------
+[0. General Body]
+-------------------------------------------------------------------*/
 body {
 	font-size: 14px;
 	color: #333;
@@ -31,6 +34,31 @@ body {
 	border-radius: 3px;
 }
 
+body { color: #363b3f; background: #f7f8f8; }
+
+.section { padding: 30px 0 50px 0px; }
+.section h1, .section h2, .section h3, .section h4 { font-family: "Lato", sans-serif; font-weight: 700; color: #d82c2e; }
+.section p { font-family: "Lato", sans-serif; font-weight: 400; font-size: 15px; line-height: 24px; }
+.section .heading { text-align: center; padding-bottom: 40px; }
+.section .profilePic { text-align: center; margin: 0 auto; float: none; }
+.section .divider { width: 100px; height: 1px; background: #d82c2e; margin: 0 auto; }
+
+section.colored h1, section.colored h2, section.colored h3, section.colored h4, section.colored p { color: white; }
+
+.btn, .filter a { font-family: "Lato", sans-serif; font-weight: 400; font-size: 14px; text-decoration: none; background: white; color: #b6b7b7; border: 1px solid #b6b7b7; padding: 18px; -webkit-transition: all 0.3s ease-in, 0s; -moz-transition: all 0.3s ease-in, 0s; -o-transition: all 0.3s ease-in, 0s; -ms-transition: all 0.3s ease-in, 0s; transition: all 0.3s ease-in, 0s; }
+.btn:hover, .filter a:hover, .btn:focus, .filter a:focus { background-color: #d82c2e; border-color: #d82c2e; color: white; }
+
+.borderBtn, .contactform button { font-family: "Lato", sans-serif; font-weight: 700; font-size: 14px; text-decoration: none; color: white; border: 1px solid white; padding: 18px 50px 18px 50px; display: inline-block; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-transition: all 0.3s ease-in, 0s; -moz-transition: all 0.3s ease-in, 0s; -o-transition: all 0.3s ease-in, 0s; -ms-transition: all 0.3s ease-in, 0s; transition: all 0.3s ease-in, 0s; }
+.borderBtn:hover, .contactform button:hover, .borderBtn:focus, .contactform button:focus { background-color: white; color: #d82c2e; text-decoration: none; }
+
+section .centered { margin: 0 auto; float: none; }
+
+.hidethis { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 0 ")"; filter: alpha(opacity=0); opacity: 0; }
+
+/*----------------------------------------------------------------
+[1.welcome]
+-----------------------------------------------------------------*/
+
 
 
 .aboutMe:hover {
@@ -55,6 +83,8 @@ body {
 	right: 20px;
 	background-image: url(../img/icons/next.png);
 }
+
+
 
 .titleMessage {
 	position: absolute;
@@ -88,6 +118,48 @@ body {
 .aboutImage {
 	max-width: 100%;
 }
+
+/*------------------------------------------------------------------
+[3. About]
+-------------------------------------------------------------------*/
+.hero { background: #d82c2e; color: white; }
+.hero .borderBtn, .hero .contactform button, .contactform .hero button { margin-top: 20px; }
+.hero h3 { color: black !important; }
+
+.firstSec { padding-top: 30px; }
+
+.firstSec.fixed { padding-top: 80px; }
+
+.services .services-inner { margin-top: 20px; -webkit-transition: all 0.3s ease-in, 0s; -moz-transition: all 0.3s ease-in, 0s; -o-transition: all 0.3s ease-in, 0s; -ms-transition: all 0.3s ease-in, 0s; transition: all 0.3s ease-in, 0s; }
+
+.service { border: 1px solid #e3e5e5; padding-top: 50px; padding-bottom: 50px; text-align: center; color: #d82c2e; margin-left: -1px; -webkit-transition: all 0.3s ease-in, 1s; -moz-transition: all 0.3s ease-in, 1s; -o-transition: all 0.3s ease-in, 1s; -ms-transition: all 0.3s ease-in, 1s; transition: all 0.3s ease-in, 1s; }
+.service h3 { color: black; -webkit-transition: all 0.3s ease-in, 0s; -moz-transition: all 0.3s ease-in, 0s; -o-transition: all 0.3s ease-in, 0s; -ms-transition: all 0.3s ease-in, 0s; transition: all 0.3s ease-in, 0s; }
+.service i { width: 51px; height: 45px; margin: 0 auto; display: block; background: url(../images/icons.png) no-repeat; -webkit-transition: all 0.3s ease-in, 0s; -moz-transition: all 0.3s ease-in, 0s; -o-transition: all 0.3s ease-in, 0s; -ms-transition: all 0.3s ease-in, 0s; transition: all 0.3s ease-in, 0s; }
+.service .heart { background-position: left top; }
+.service .bulp { background-position: -51px top; }
+.service .graph { background-position: -102px top; }
+.service .coding { background-position: -152px top; }
+.service .globe { background-position: -204px top; }
+.service .music { background-position: -255px top; }
+.service .pencil { background-position: -306px top; }
+.service .camera { background-position: -357px top; }
+.service .vcamera { background-position: -408px top; }
+.service .cloud { background-position: -459px top; }
+.service:hover, .service:focus { background-color: #d82c2e; border-color: #d82c2e; color: white; }
+.service:hover h3, .service:focus h3 { color: white; }
+.service:hover .heart, .service:focus .heart { background-position: left bottom; }
+.service:hover .bulp, .service:focus .bulp { background-position: -51px bottom; }
+.service:hover .graph, .service:focus .graph { background-position: -103px bottom; }
+.service:hover .coding, .service:focus .coding { background-position: -152px bottom; }
+.service:hover .globe, .service:focus .globe { background-position: -204px bottom; }
+.service:hover .music, .service:focus .music { background-position: -255px bottom; }
+.service:hover .pencil, .service:focus .pencil { background-position: -306px bottom; }
+.service:hover .camera, .service:focus .camera { background-position: -357px bottom; }
+.service:hover .vcamera, .service:focus .vcamera { background-position: -408px bottom; }
+.service:hover .cloud, .service:focus .cloud { background-position: -459px bottom; }
+
+
+/* ----------------- Skills section ------------------------ */
 
 .skillsSection,
 .contactSection {
@@ -379,3 +451,38 @@ body {
  	height: 100%;
  	background: url(../img/loader.gif) center center no-repeat;
  }
+
+ /*------------------------------------------------------------------
+[8. Footer]
+-------------------------------------------------------------------*/
+footer { background: #363b3f; }
+footer p { font-size: 16px; color: white; text-align: center; }
+footer ul { width: 100%; text-align: center; margin-top: 20px; }
+footer li { display: inline-block; margin: 0 4px; }
+footer li a { display: block; text-decoration: none; border-bottom: none; padding: 18px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-transition: all 0.3s ease-in, 1s; -moz-transition: all 0.3s ease-in, 1s; -o-transition: all 0.3s ease-in, 1s; -ms-transition: all 0.3s ease-in, 1s; transition: all 0.3s ease-in, 1s; }
+footer .facebook { background: url(../images/facebook.png) center no-repeat #444749; }
+footer .facebook:hover { background-color: #4265b9; }
+footer .twitter { background: url(../images/twitter.png) center no-repeat #444749; }
+footer .twitter:hover { background-color: #9ae4e8; }
+footer .google { background: url(../images/google.png) center no-repeat #444749; }
+footer .google:hover { background-color: #d62408; }
+footer .youtube { background: url(../images/youtube.png) center no-repeat #444749; }
+footer .youtube:hover { background-color: #df3333; }
+footer .flickr { background: url(../images/flickr.png) center no-repeat #444749; }
+footer .flickr:hover { background-color: #E2408F; }
+footer .dribbble { background: url(../images/dribbble.png) center no-repeat #444749; }
+footer .dribbble:hover { background-color: #e94c89; }
+footer .behance { background: url(../images/behance.png) center no-repeat #444749; }
+footer .behance:hover { background-color: #3fbff0; }
+footer .instagram { background: url(../images/instagram.png) center no-repeat #444749; }
+footer .instagram:hover { background-color: #956751; }
+footer .vimeo { background: url(../images/vimeo.png) center no-repeat #444749; }
+footer .vimeo:hover { background-color: #87d2e0; }
+footer .tumblr { background: url(../images/tumblr.png) center no-repeat #444749; }
+footer .tumblr:hover { background-color: #4d7Da1; }
+footer .linkedin { background: url(../images/linkedin.png) center no-repeat #444749; }
+footer .linkedin:hover { background-color: #0073b2; }
+
+.social {
+	 padding: 25px 0 25px 0px; 
+}

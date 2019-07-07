@@ -31,6 +31,8 @@ $(document).ready(function() {
 		showCursor: false
 	});
 
+	//owl carousel
+
 		$('.owl-carousel').owlCarousel({
 	    loop:true,
 	    items: 4,
